@@ -5,5 +5,5 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [react()],
   base: "/willpower/",
-  // assetsInclude: ["**/*.gltf"],
+  assetsInclude: ["**/*.gltf"],
 });

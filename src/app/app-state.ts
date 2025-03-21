@@ -1,5 +1,4 @@
 export class AppState {
-  private audioContext = new AudioContext();
   private track = new Audio("/Willpower-v2.mp3");
 
   startAudio() {
