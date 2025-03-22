@@ -1,6 +1,5 @@
 import "./app.scss";
 
-import { AppState } from "./app-state";
 import { StartScreen } from "../start-screen/start-screen";
 import { GameScreen } from "../game-screen/game-screen";
 import { useState } from "react";

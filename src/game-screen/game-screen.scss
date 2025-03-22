@@ -2,10 +2,29 @@
   width: 100%;
   height: 100%;
 
-  // Maintains aspect ratio whilst fitting to width of screen
-  // When it doesn't cover the div entirely the app's background colour is visible
-  background-image: url("/main_background.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  display: flex;
+  flex-direction: column;
+
+  .background {
+    flex: 2 0 auto;
+
+    // Maintains aspect ratio whilst fitting to width of screen
+    // When it doesn't cover the div entirely the app's background colour is visible
+    background-image: url("/main_background.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .typing-area {
+    flex: 0 1 40%;
+    overflow-y: scroll;
+
+    background-color: white;
+    mask-image: linear-gradient(to top, #0005 50%, #000 50%);
+    mask-size: 100% 3px;
+
+    padding: 12px;
+    font-size: 22px;
+  }
 }
